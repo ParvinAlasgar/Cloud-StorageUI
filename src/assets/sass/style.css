@@ -1,0 +1,36 @@
+body {
+  background-image: url(../images/giphy.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+body #cloudApp #nav .container {
+  border-color: #0d6efd !important;
+}
+body #cloudApp #nav .container .nav-links li a {
+  transition: all 0.3s;
+}
+body #cloudApp #nav .container .nav-links li a:hover {
+  color: #fff !important;
+  border-bottom: 3px solid #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  #nav .nav-icons {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #nav .nav-buttons,
+  #nav .nav-icons {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #nav .nav-buttons {
+    display: none;
+  }
+  #nav a {
+    font-size: 15px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

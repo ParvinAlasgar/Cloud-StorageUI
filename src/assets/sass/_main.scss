@@ -1,0 +1,25 @@
+// Body
+body {
+  background-image: url(../images/giphy.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  // CLoud App
+  #cloudApp {
+    // Nav
+    #nav {
+      .container {
+        border-color: $colorMain !important;
+        .nav-links {
+          li a {
+            transition: all 0.3s;
+            &:hover {
+              color: #fff !important;
+              border-bottom: 3px solid #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
