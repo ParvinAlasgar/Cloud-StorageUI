@@ -14,6 +14,19 @@ body #cloudApp #nav .container .nav-links li a:hover {
   color: #fff !important;
   border-bottom: 3px solid #fff;
 }
+body #cloudApp #main .apps {
+  border-color: #0d6efd !important;
+}
+body #cloudApp #main .apps li {
+  transition: transform 0.4s;
+}
+body #cloudApp #main .apps li:hover {
+  transform: translateX(10px);
+  color: #0d6efd !important;
+}
+body #cloudApp #main .apps li:hover > a {
+  color: gold !important;
+}
 
 @media only screen and (max-width: 992px) {
   #nav .nav-icons {

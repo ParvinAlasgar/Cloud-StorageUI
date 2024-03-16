@@ -21,5 +21,22 @@ body {
         }
       }
     }
+    // Main
+    #main {
+      // Apps
+      .apps {
+        border-color: $colorMain !important;
+        li {
+          transition: transform 0.4s;
+          &:hover {
+            transform: translateX(10px);
+            color: $colorMain !important;
+            > a {
+              color: gold !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
