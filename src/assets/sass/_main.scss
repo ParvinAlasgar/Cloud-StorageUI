@@ -23,16 +23,108 @@ body {
     }
     // Main
     #main {
-      // Apps
-      .apps {
-        border-color: $colorMain !important;
-        li {
-          transition: transform 0.4s;
-          &:hover {
-            transform: translateX(10px);
-            color: $colorMain !important;
-            > a {
-              color: gold !important;
+      // Section
+      .section {
+        &:nth-child(1) {
+          padding-right: 0;
+        }
+        &:nth-child(2) {
+          padding-left: 0;
+        }
+        // Apps
+        .apps {
+          height: 100%;
+          border-color: $colorMain !important;
+          border-right: 0 !important;
+          border-top: 0 !important;
+          li {
+            transition: transform 0.4s;
+            &:hover {
+              transform: translateX(10px);
+              color: $colorMain !important;
+              > a {
+                color: gold !important;
+              }
+            }
+          }
+        }
+        // Enviroment
+        .enviroment {
+          border-color: $colorMain !important;
+          border-top: 0 !important;
+          .enviroment-header {
+            li a {
+              transition: all 0.3s;
+              &:hover {
+                color: #fff !important;
+                border-bottom: 3px solid #fff;
+              }
+            }
+          }
+          .enviroment-content {
+            background-color: $colorSecond;
+            height: 650px;
+            .adobe {
+              background-image: url(../images/cubes.png),
+                linear-gradient(
+                  to right top,
+                  #cf4af3,
+                  #e73bd7,
+                  #f631bc,
+                  #fd31a2,
+                  #ff3a8b,
+                  #ff4b78,
+                  #ff5e68,
+                  #ff705c,
+                  #ff8c51,
+                  #ffaa49,
+                  #ffc848,
+                  #ffe652
+                );
+              img {
+                width: 50px;
+              }
+              a {
+                background-color: $colorMain;
+                transition: background-color 3s;
+                &:hover {
+                  background-color: blue;
+                }
+              }
+              .glass {
+                width: 200px;
+              }
+            }
+            table {
+              tbody {
+                tr {
+                  &:hover {
+                    background-color: rgba(111, 119, 90, 0.4);
+                  }
+                  td {
+                    cursor: pointer;
+                    img {
+                      transition: transform 0.7s;
+                      width: 50px;
+                    }
+                    &:hover img {
+                      transform: rotate(360deg);
+                    }
+                  }
+                }
+              }
+            }
+            .open {
+              .wrapper {
+                height: 230px;
+                cursor: pointer;
+                &:hover {
+                  background-color: rgba(111, 119, 90, 0.4);
+                }
+                img {
+                  width: 50px;
+                }
+              }
             }
           }
         }

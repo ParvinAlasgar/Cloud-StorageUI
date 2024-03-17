@@ -14,28 +14,106 @@ body #cloudApp #nav .container .nav-links li a:hover {
   color: #fff !important;
   border-bottom: 3px solid #fff;
 }
-body #cloudApp #main .apps {
-  border-color: #0d6efd !important;
+body #cloudApp #main .section:nth-child(1) {
+  padding-right: 0;
 }
-body #cloudApp #main .apps li {
+body #cloudApp #main .section:nth-child(2) {
+  padding-left: 0;
+}
+body #cloudApp #main .section .apps {
+  height: 100%;
+  border-color: #0d6efd !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+}
+body #cloudApp #main .section .apps li {
   transition: transform 0.4s;
 }
-body #cloudApp #main .apps li:hover {
+body #cloudApp #main .section .apps li:hover {
   transform: translateX(10px);
   color: #0d6efd !important;
 }
-body #cloudApp #main .apps li:hover > a {
+body #cloudApp #main .section .apps li:hover > a {
   color: gold !important;
+}
+body #cloudApp #main .section .enviroment {
+  border-color: #0d6efd !important;
+  border-top: 0 !important;
+}
+body #cloudApp #main .section .enviroment .enviroment-header li a {
+  transition: all 0.3s;
+}
+body #cloudApp #main .section .enviroment .enviroment-header li a:hover {
+  color: #fff !important;
+  border-bottom: 3px solid #fff;
+}
+body #cloudApp #main .section .enviroment .enviroment-content {
+  background-color: rgba(27, 67, 99, 0.7);
+  height: 650px;
+}
+body #cloudApp #main .section .enviroment .enviroment-content .adobe {
+  background-image: url(../images/cubes.png), linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
+}
+body #cloudApp #main .section .enviroment .enviroment-content .adobe img {
+  width: 50px;
+}
+body #cloudApp #main .section .enviroment .enviroment-content .adobe a {
+  background-color: #0d6efd;
+  transition: background-color 3s;
+}
+body #cloudApp #main .section .enviroment .enviroment-content .adobe a:hover {
+  background-color: blue;
+}
+body #cloudApp #main .section .enviroment .enviroment-content .adobe .glass {
+  width: 200px;
+}
+body #cloudApp #main .section .enviroment .enviroment-content table tbody tr:hover {
+  background-color: rgba(111, 119, 90, 0.4);
+}
+body #cloudApp #main .section .enviroment .enviroment-content table tbody tr td {
+  cursor: pointer;
+}
+body #cloudApp #main .section .enviroment .enviroment-content table tbody tr td img {
+  transition: transform 0.7s;
+  width: 50px;
+}
+body #cloudApp #main .section .enviroment .enviroment-content table tbody tr td:hover img {
+  transform: rotate(360deg);
+}
+body #cloudApp #main .section .enviroment .enviroment-content .open .wrapper {
+  height: 230px;
+  cursor: pointer;
+}
+body #cloudApp #main .section .enviroment .enviroment-content .open .wrapper:hover {
+  background-color: rgba(111, 119, 90, 0.4);
+}
+body #cloudApp #main .section .enviroment .enviroment-content .open .wrapper img {
+  width: 50px;
 }
 
 @media only screen and (max-width: 992px) {
   #nav .nav-icons {
     display: none !important;
   }
+  #main .section:nth-child(2) {
+    padding-left: 12px !important;
+  }
+  #main .open {
+    justify-content: center !important;
+  }
+  #main .apps {
+    display: none !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   #nav .nav-buttons,
   #nav .nav-icons {
+    display: none !important;
+  }
+  #main .glass {
+    display: none !important;
+  }
+  #main .apps {
     display: none !important;
   }
 }
@@ -45,5 +123,37 @@ body #cloudApp #main .apps li:hover > a {
   }
   #nav a {
     font-size: 15px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #nav li {
+    padding: 0 !important;
+  }
+  #nav li a {
+    font-size: 12px !important;
+  }
+  #main {
+    font-size: 10px !important;
+  }
+  #main .enviroment-header a {
+    font-size: 12px !important;
+  }
+  #main .enviroment-content {
+    padding: 10px !important;
+  }
+  #main .enviroment-content h4 {
+    text-align: center;
+  }
+  #main img {
+    width: 25px !important;
+  }
+  #main #table th,
+  #main #table td,
+  #main #table a {
+    padding: 3px !important;
+    font-size: 10px !important;
+  }
+  #main .open .wrapper {
+    padding: 10px !important;
   }
 }/*# sourceMappingURL=style.css.map */
